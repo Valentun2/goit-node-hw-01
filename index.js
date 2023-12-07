@@ -2,14 +2,6 @@ import {program} from "commander"
 import * as contactService from "./contact.js";
 
 
-
-
-
-
-
-
-
-
 const invokeAction = async ({ action, id, name, email, phone }) => {
   switch (action) {
     case "list":
@@ -31,12 +23,6 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
       console.warn("\x1B[31m Unknown action type!");
   }
 };
-//   invokeAction({action:"list"})
-// invokeAction({action:'get', id:"1DEXoP8AuCGYc1YgoQ6hw"})
-// invokeAction({action:'remove', id:"1DEXoP8AuCGYc1YgoQ6hw"})
-// invokeAction({ action: "add", name: "Valik", email: "ofi@com", phone: "849746896" });
-
-
 
 
 program
