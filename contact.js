@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 
 import path from "path";
 
+
 const contactsPath = path.resolve("db", "contact.json");
 
 export const listContacts = async () => {
